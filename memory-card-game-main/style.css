@@ -1,0 +1,52 @@
+body {
+  background: #333333;
+  margin: 0;
+}
+
+.tiles {
+  margin: 48px auto;
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.tile {
+  height: 100px;
+  background: #111111;
+  border: 5px solid #444444;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 25px;
+  margin-left: 25px;
+  padding: 5px;
+  font-size: larger;
+}
+
+#settings {
+  font-size: larger;
+  margin-left: 10px;
+  margin-top: 25px;
+  display: none;
+}
+
+label {
+  color: white;
+  margin-top: 25px;
+}
+
+select {
+  padding: 5px;
+  margin-top: 25px;
+}
+
+.timer, .pares {
+  color: #FFF;
+  font-size: 14pt;
+  display: inline;
+  margin-top: 25px;
+  margin-left: 25px;
+}

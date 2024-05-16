@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <button id="startGameButton">Почати гру</button>
+  <button id="changeGameButton" disabled>Налаштування гри</button>
+  <button id="newGameButton">Нова гра</button>
+  <div class="timer">time: <span>180</span> sec</div>
+  <div class="pares">pares: <span>0</span></div>
+  <div id="settings">
+    <label for="gridSize">Розмір поля (рядки x стовпці):</label>
+    <select id="gridSize">
+      <option value="4" selected>4 x 4</option>
+      <option value="6">6 x 6</option>
+    </select>
+    <label for="difficulty">Складність:</label>
+    <select id="difficulty">
+      <option value="180" selected>Легкий (3 хв.)</option>
+      <option value="120">Середній (2 хв.)</option>
+      <option value="60">Важкий (1 хв.)</option>
+    </select>
+    <button id="applySettings">Застосувати налаштування</button>
+  </div>
+  <div class="tiles"></div>
+</body>
+</html>
